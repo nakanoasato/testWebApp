@@ -6,6 +6,79 @@
     <title>仔犬の紹介 | 三色だんごページ</title>
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/menu.js"></script>
+    <style>
+        body {
+          font-family: sans-serif;
+          margin: 0;
+          padding: 0;
+          background: #f9f9f9;
+        }
+        header {
+          background: #fff;
+          padding: 1.5rem;
+          text-align: center;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        nav.breed-nav {
+          background: #fff;
+          padding: 1rem;
+          text-align: center;
+          box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+        nav.breed-nav a {
+          margin: 0 1em;
+          text-decoration: none;
+          color: #0066cc;
+          font-weight: bold;
+        }
+        main {
+          padding: 1rem;
+        }
+        section.breed-section {
+          margin-bottom: 2rem;
+        }
+        section.breed-section h2 {
+          font-size: 1.4rem;
+          border-left: 5px solid #f8c8dc;
+          padding-left: 0.5em;
+          margin-bottom: 1rem;
+        }
+        .grid {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1rem;
+        }
+        .card {
+          background: white;
+          padding: 1rem;
+          border-radius: 0.5rem;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .card .img {
+          width: 100%;
+          aspect-ratio: 1/1;
+          background: #ccc;
+          border-radius: 0.5rem;
+          margin-bottom: 0.5rem;
+        }
+        .card .name {
+          font-weight: bold;
+          margin-bottom: 0.25rem;
+        }
+        .card .breed {
+          font-size: 0.9rem;
+          color: #666;
+          text-align: center;
+        }
+        @media (max-width: 600px) {
+          .grid {
+            grid-template-columns: 1fr 1fr;
+          }
+        }
+      </style>
 </head>
 
 <body>
