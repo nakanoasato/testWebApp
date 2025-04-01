@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ | 三色だんごサイト</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" style="margin-left: 1rem; text-decoration: none; color: inherit;">
+      ← ホームに戻る
+    </a>
+    <h1 class="title" style="text-align:center;">お問い合わせ</h1>
+  </header>
+
+  <main>
+    <form action="https://formspree.io/f/xjkyeqrb" method="POST">
+      <label>
+        お名前：
+        <input type="text" name="name" required>
+      </label>
+
+      <label>
+        メールアドレス：
+        <input type="email" name="email" required>
+      </label>
+
+      <label>
+        メッセージ：
+        <textarea name="message" rows="6" required></textarea>
+      </label>
+
+      <button type="submit">送信する</button>
+    </form>
+  </main>
+</body>
+</html>
